@@ -41,7 +41,7 @@
                         <!-- Usage: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.ifpr.edu.impressora.App</mainClass>
+                            <mainClass>com.ifpr.edu.impressora.Launcher</mainClass>
                         </configuration>
                     </execution>
                 </executions>
