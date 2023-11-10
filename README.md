@@ -1,4 +1,4 @@
-# impressora_ecologica
+# ♻ Impressora Ecológica 🍃
 
 Projeto sendo desenvolvida para a disciplina de Projeto Integrador
 
