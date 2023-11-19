@@ -8,18 +8,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+import com.ifpr.edu.impressora.controllers.Principal;
+
+import io.github.hugoperlin.navigatorfx.BaseAppNavigator;
+import io.github.hugoperlin.navigatorfx.ScreenRegistry;
+import io.github.hugoperlin.navigatorfx.ScreenRegistryFXML;
+
 /**
  * JavaFX App
  */
-public class App extends Application {
+public class App extends BaseAppNavigator {
 
     private static Scene scene;
 
-    @Override
-    public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
-        stage.setScene(scene);
-        stage.show();
+    public static void main(String[] args) {
+        launch(args);
     }
 
     static void setRoot(String fxml) throws IOException {
@@ -31,8 +34,32 @@ public class App extends Application {
         return fxmlLoader.load();
     }
 
-    public static void main(String[] args) {
-        launch();
+    @Override
+    public String getAppTitle() {
+        return "Impressora meu pau na sua oreia";
+    }
+
+    @Override
+    public String getHome() {
+        return "PRINCIPAL";
+    }
+
+    @Override
+    public void registrarTelas() {
+        registraTela("PRINCIPAL", new ScreenRegistryFXML(App.class, 
+            "NaoSei.fxml", 
+                o -> new Principal()));
+        // registraTela("TELA_INICIAL", new ScreenRegistryFXML(App.class, 
+        //     "principal.fxml", 
+        //         o -> new Principal()));
+
+        // registraTela("TELA_FICHAS", new ScreenRegistryFXML(App.class, 
+        //     "principal.fxml", 
+        //         o -> new Principal()));
+
+        // registraTela("TELA_IMPRESSOES", new ScreenRegistryFXML(App.class, 
+        //     "principal.fxml", 
+        //         o -> new Principal()));        
     }
 
 }
