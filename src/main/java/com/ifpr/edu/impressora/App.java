@@ -39,7 +39,7 @@ public class App extends BaseAppNavigator {
 
     @Override
     public String getAppTitle() {
-        return "Impressora meu pau na sua oreia";
+        return "Impressora Ecologica";
     }
 
     @Override

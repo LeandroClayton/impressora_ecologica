@@ -12,8 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="660.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifpr.edu.impressora.controllers.TelaDePessoas">
+<AnchorPane id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="660.0" stylesheets="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifpr.edu.impressora.controllers.TelaDePessoas">
    <children>
       <AnchorPane fx:id="hudUser" layoutX="17.0" layoutY="49.0" prefHeight="403.0" prefWidth="627.0" styleClass="hud">
          <children>
@@ -28,7 +27,7 @@
                      <graphic>
                         <ImageView fitHeight="29.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/mais.png" />
+                              <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/mais.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -49,7 +48,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/lapis.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/lapis.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -58,7 +57,7 @@
                <graphic>
                   <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/lixo.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/lixo.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -79,7 +78,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/pesquisa-de-lupa.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/pesquisa-de-lupa.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -88,7 +87,7 @@
                <graphic>
                   <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/voltar.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/voltar.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -97,7 +96,7 @@
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/troca.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/troca.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -117,7 +116,7 @@
                      <graphic>
                         <ImageView fitHeight="29.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@images/mais.png" />
+                              <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/mais.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -137,7 +136,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/lapis.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/lapis.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -146,7 +145,7 @@
                <graphic>
                   <ImageView fitHeight="22.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/lixo.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/lixo.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -167,7 +166,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/pesquisa-de-lupa.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/pesquisa-de-lupa.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -176,7 +175,7 @@
                <graphic>
                   <ImageView fitHeight="34.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/voltar.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/voltar.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -185,7 +184,7 @@
                <graphic>
                   <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/troca.png" />
+                        <Image url="@../../../Leandrao/Java/impressora_ecologica/src/main/resources/com/ifpr/edu/impressora/images/troca.png" />
                      </image>
                   </ImageView>
                </graphic>
