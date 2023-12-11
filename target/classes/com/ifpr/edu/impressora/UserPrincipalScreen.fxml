@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="body" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="660.0" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifpr.edu.impressora.controllers.PrincipalUser">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="86.0" layoutY="31.0" prefHeight="438.0" prefWidth="488.0" spacing="10.0" styleClass="hud">
+         <children>
+            <Label alignment="BOTTOM_CENTER" prefHeight="64.0" prefWidth="256.0" text="Seja Bem vindo!!" textFill="#59a452">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbNomePessoa">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <HBox alignment="TOP_CENTER" prefHeight="17.0" prefWidth="488.0">
+               <children>
+                  <Label text="Você têm:  ">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbNumFichas">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="283.0" prefWidth="488.0">
+               <children>
+                  <AnchorPane prefHeight="239.0" prefWidth="488.0">
+                     <children>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/imagemFolha.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="130.0" layoutY="4.0" text="Pesagens realizadas anteriormente">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tbWeighing" layoutX="81.0" layoutY="32.0" prefHeight="175.0" prefWidth="327.0">
+                          <columns>
+                            <TableColumn fx:id="clmDateWeighing" prefWidth="109.0" styleClass="colunaTabela" text="Data da Pesagem" />
+                            <TableColumn fx:id="clmResidue" prefWidth="109.0" text="Resíduo inserido" />
+                              <TableColumn fx:id="clmWeight" prefWidth="109.0" text="Peso" />
+                          </columns>
+                        </TableView>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="379.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/imagemFolha.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <Button id="btSair" layoutX="389.0" layoutY="223.0" mnemonicParsing="false" onAction="#realizeLogoff" prefHeight="42.0" prefWidth="80.0" styleClass="buttonsImageView" text="Sair">
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/digitar.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

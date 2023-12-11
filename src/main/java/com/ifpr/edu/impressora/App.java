@@ -8,7 +8,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import com.ifpr.edu.impressora.controllers.Principal;
+import com.ifpr.edu.impressora.controllers.PrincipalServer;
+import com.ifpr.edu.impressora.controllers.PrincipalUser;
+import com.ifpr.edu.impressora.controllers.TelaDeLogin;
+import com.ifpr.edu.impressora.controllers.TelaDePessoas;
 
 import io.github.hugoperlin.navigatorfx.BaseAppNavigator;
 import io.github.hugoperlin.navigatorfx.ScreenRegistry;
@@ -41,25 +44,25 @@ public class App extends BaseAppNavigator {
 
     @Override
     public String getHome() {
-        return "PRINCIPAL";
+        return "LOGIN";
     }
 
     @Override
     public void registrarTelas() {
-        registraTela("PRINCIPAL", new ScreenRegistryFXML(App.class, 
-            "NaoSei.fxml", 
-                o -> new Principal()));
-        // registraTela("TELA_INICIAL", new ScreenRegistryFXML(App.class, 
-        //     "principal.fxml", 
-        //         o -> new Principal()));
+        registraTela("LOGIN", new ScreenRegistryFXML(App.class, 
+            "LoginScreen.fxml", 
+                o -> new TelaDeLogin()));
+        registraTela("PRINCIPAL_SERVER", new ScreenRegistryFXML(App.class, 
+            "ServPrincipalScreen.fxml", 
+                o -> new PrincipalServer()));
 
-        // registraTela("TELA_FICHAS", new ScreenRegistryFXML(App.class, 
-        //     "principal.fxml", 
-        //         o -> new Principal()));
+        registraTela("PRINCIPAL_USER", new ScreenRegistryFXML(App.class, 
+            "UserPrincipalScreen.fxml", 
+                o -> new PrincipalUser()));
 
-        // registraTela("TELA_IMPRESSOES", new ScreenRegistryFXML(App.class, 
-        //     "principal.fxml", 
-        //         o -> new Principal()));        
+        registraTela("TELA_PESSOAS", new ScreenRegistryFXML(App.class, 
+            "PersonListScreen.fxml", 
+                o -> new TelaDePessoas()));        
     }
 
 }

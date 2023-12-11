@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Titan+One&display=swap');
+
+
+
+#body{
+    -fx-background-color: rgb(75, 95, 184);
+}
+
+#labelTitulo{
+    -fx-font-weight: 900;
+    -fx-font-family: 'Titan One', sans-serif;
+    -fx-font-style: italic;
+}
+
+#labelH2{
+    -fx-font-family: 'Oswald', sans-serif;
+    -fx-font-weight: 900;
+}
+
+.hud{
+    -fx-background-color: rgb(218, 181, 133);
+}
+
+.btAvancar{
+    -fx-background-color: rgb(89, 164, 82);
+    -fx-border-radius: 100px;
+    -fx-text-fill: white;
+}
+
+.btAvancar:hover{
+    -fx-background-color:rgb(52, 100, 48);
+    -fx-font-weight: 700;
+}
+
+
+
+.textFields{
+    -fx-background-color: rgb(218, 181, 133);
+    -fx-border-radius: 10px;
+    -fx-border-color: rgb(255, 255, 255);
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: white;
+}   
+
+.btHud{
+    -fx-border-color: rgb(89, 164, 82);
+    -fx-border-radius: 10px;
+    -fx-background-color: rgb(89, 164, 82);
+}
+
+.btHud:hover, .active{
+    -fx-background-color: rgb(59, 109, 55);
+    -fx-font-weight: 700;
+    -fx-border-color: rgb(59, 109, 55);
+
+    -fx-text-fill: white;
+}
+
+#hudPrincipal{
+    -fx-background-color: rgb(218, 181, 133);
+}
+
+#btAlterarValor, #btConfirmarAlteracao, #btCancelarAlteracao, .buttonsImageView{
+    -fx-background-color: rgb(218, 181, 133);
+    -fx-border-radius: 100px;
+}
+
+.buttonsImageView:hover{
+    -fx-background-color: rgb(156, 130, 95);
+}
+
+#hudPesagensRealizadas{
+    -fx-background-color: white;
+}
+
+.colunaTabela{
+    
+}
+
+
